@@ -1,0 +1,398 @@
+Scripts run line
+../../bin/alternate_names.sh:$TAC_ROOT/components/bin/run.sh run.AlternateNamesCandidates $expanded_query $dtag \
+../../bin/alternate_names.sh:| $TAC_ROOT/components/bin/run.sh run.MatchRealOffsets $dscore \
+../../bin/alternate_names.sh:| $TAC_ROOT/components/bin/run.sh run.AllCandidatesResponse $expanded_query 0.5 $runid \
+../../bin/candidates2013.sh:CANDIDATES_CMD="$TAC_ROOT/components/bin/run.sh run.Candidates $expanded_query $RELCONFIG $dtag"
+../../bin/candidates2013.sh:	CANDIDATES_CMD="$TAC_ROOT/components/bin/run.sh experimental.coref.CorefTagger $expanded_query $RELCONFIG $dtag"
+../../bin/candidates2013.sh:cat $candidates.tmp | $TAC_ROOT/components/bin/run.sh -Xmx128g run.MatchRealOffsets $dscore \
+../../bin/candidates.sh:$TAC_ROOT/components/bin/run.sh run.Candidates $1 $RELCONFIG $2 > $3
+../../bin/cands_to_proto.sh:$TAC_ROOT/components/bin/run.sh run.CandidatesToProto $1 $2 $3
+../../bin/create_index.sh:$TAC_ROOT/components/bin/run.sh indexir.Indexing $corpusdatapath COLDSTART2014 false $index $docidlist
+../../bin/create_index.sh:echo "$TAC_ROOT/components/bin/run.sh indexir.IdFileMapping $index ${index}.idfile_mapping"
+../../bin/create_index.sh:$TAC_ROOT/components/bin/run.sh indexir.IdFileMapping $index ${index}.idfile_mapping
+../../bin/dependency_pattern_response.sh:$TAC_ROOT/components/bin/run.sh \
+../../bin/expand_query.sh:$TAC_ROOT/components/bin/run.sh run.Expand $1 $RELLIST $RELCONFIG $LINKSTATS 10 $ORG_SUFFIXES $2 $precision_expansion
+../../bin/filter_predictions_tuned.sh:$TAC_ROOT/components/bin/run.sh run.FilterPredictionsByThreshold $input $thresholds > $filtered
+../../bin/freebase_slots.sh:$TAC_ROOT/components/bin/run.sh freebase.FreebaseSlots $freebase_index $tac_to_freebase_relmap $query_expanded $slots_out
+../../bin/induced_pattern_response.sh:$TAC_ROOT/components/bin/run.sh run.WeightedPatternResponse $query_expanded $candidates $PATTERNS > $response
+../../bin/list_match_response.sh:$TAC_ROOT/components/bin/run.sh run.ListMatchResponse $query_expanded $kb_slots $link_stats $candidates \
+../../bin/merge_responses-2016-pilot.sh:$TAC_ROOT/components/bin/run.sh run.MergeResponses $2 $runid ${@:3}
+../../bin/merge_responses.sh:$TAC_ROOT/components/bin/run.sh run.MergeResponses $1 $runid ${@:2}
+../../bin/orgs_from_titles.sh:$TAC_ROOT/components/bin/run.sh run.OrganizationsFromTitles $1 $2 $3 $4
+../../bin/parse_candidates.sh:$TAC_ROOT/components/bin/run.sh -Xmx${mem}G run.ParseSentencesParallel $1 $TAC_ROOT/resources/parser_stanford/042013/englishPCFG.ser.gz $numcores $maxlen > $2
+../../bin/pattern_prediction.sh:$TAC_ROOT/components/bin/run.sh run.PatternPrediction $candidates $patterns > $predictions
+../../bin/pattern_response.sh:$TAC_ROOT/components/bin/run.sh run.PatternResponse $query_expanded $candidates $PATTERNS $runid $fast_match > $response
+../../bin/postprocess2012.sh:$TAC_ROOT/components/bin/run.sh run.DateNormalizer $INPUT $correct_date
+../../bin/postprocess2012.sh:$TAC_ROOT/components/bin/run.sh run.RedundancyEliminator $LINKSTAT $correct_date $QUERYXML \
+../../bin/postprocess2013_nolinkstat.sh:$TAC_ROOT/components/bin/run.sh run.DateNormalizer $INPUT $correct_date
+../../bin/postprocess2013_nolinkstat.sh:$TAC_ROOT/components/bin/run.sh run.RedundancyEliminator $LINKSTAT $correct_date $QUERYXML $ORG_MAP \
+../../bin/postprocess2013_nolinkstat.sh:| $TAC_ROOT/components/bin/run.sh run.RemoveSlots $QUERYXML $TAC_ROOT/resources/manual_annotation/disallowed_slots \
+../../bin/postprocess2013_nolinkstat.sh:| $TAC_ROOT/components/bin/run.sh run.ConvertResponse2012To2013 \
+../../bin/postprocess2013.sh:$TAC_ROOT/components/bin/run.sh run.DateNormalizer $INPUT $correct_date
+../../bin/postprocess2013.sh:$TAC_ROOT/components/bin/run.sh run.RedundancyEliminator $LINKSTAT $correct_date $QUERYXML $ORG_MAP \
+../../bin/postprocess2013.sh:| $TAC_ROOT/components/bin/run.sh run.RemoveSlots $QUERYXML $TAC_ROOT/resources/manual_annotation/disallowed_slots \
+../../bin/postprocess2013.sh:| $TAC_ROOT/components/bin/run.sh run.ConvertResponse2012To2013 \
+../../bin/postprocess2014.sh:$TAC_ROOT/components/bin/run.sh run.DateNormalizer $INPUT $correct_date
+../../bin/postprocess2014.sh:$TAC_ROOT/components/bin/run.sh run.RedundancyEliminator $LINKSTAT $correct_date $QUERYXML $ORG_MAP \
+../../bin/postprocess2014.sh:| $TAC_ROOT/components/bin/run.sh run.RemoveSlots $QUERYXML $TAC_ROOT/resources/manual_annotation/disallowed_slots \
+../../bin/postprocess2014.sh:| $TAC_ROOT/components/bin/run.sh run.ConvertResponse2012To2014 \
+../../bin/postprocess2015.sh:$TAC_ROOT/components/bin/run.sh run.DateNormalizer $INPUT $correct_date
+../../bin/postprocess2015.sh:$TAC_ROOT/components/bin/run.sh run.RedundancyEliminator $LINKSTAT $correct_date $QUERYXML $ORG_MAP \
+../../bin/postprocess2015.sh:| $TAC_ROOT/components/bin/run.sh run.RemoveSlots $QUERYXML $TAC_ROOT/resources/manual_annotation/disallowed_slots \
+../../bin/postprocess2015.sh:| $TAC_ROOT/components/bin/run.sh run.ConvertResponse2012To2015 $relconfig2015 \
+../../bin/postprocess.sh:$TAC_ROOT/components/bin/run.sh run.RedundancyEliminator $LINKSTAT $INPUT $QUERYXML \
+../../bin/proto_to_cands.sh:$TAC_ROOT/components/bin/run.sh run.ProtoToCandidates $1 $2
+../../bin/response.sh:$TAC_ROOT/components/bin/run.sh run.PredictionToResponse $1 $2 $runid > $3
+../../bin/retrieve.sh:$TAC_ROOT/components/bin/run.sh run.Retrieve $1 $INDEX $NUM_DOCS $2
+../../bin/retrieve_using_index.sh:$TAC_ROOT/components/bin/run.sh run.Retrieve $1 $index $NUM_DOCS $3 $STRICT
+../../bin/sfeatures.sh:$TAC_ROOT/components/bin/run.sh run.Features $FEATUREMAP $BROWNCLASSES true false $SENTS $FEATS $FEATURESET
+../../bin/shortened_pattern_response.sh:$TAC_ROOT/components/bin/run.sh run.WeightedPatternResponse $query_expanded $candidates $PATTERNS 0.0 true $runid > $response
+../../bin/split_sentences2.sh:$TAC_ROOT/components/bin/run.sh run.ExtractText2 $DSCORE \
+../../bin/split_sentences2.sh:| $TAC_ROOT/components/bin/run.sh -Xmx1g run.Format $QUERY_EXPANDED $coref_window \
+../../bin/split_sentences2_window.sh:$TAC_ROOT/components/bin/run.sh run.ExtractText2 $DSCORE \
+../../bin/split_sentences2_window.sh:| $TAC_ROOT/components/bin/run.sh run.Format $QUERY_EXPANDED 1 \
+../../bin/tagged_docs.sh:$TAC_ROOT/components/bin/run.sh run.TaggedDocs $DRANK > $DTAG 
+../../bin/tagged_stored_docs.sh:$TAC_ROOT/components/bin/run.sh run.TaggedStoredDocs $DRANK $INDEX > $DTAG 
+../../bin/tagging.sh:| $TAC_ROOT/components/bin/run.sh run.SpecialEntities \
+../../bin/tag_tac_file.sh:| $TAC_ROOT/components/bin/run.sh run.ExtractAllText \
+../../bin/tag_tac_file.sh:| $TAC_ROOT/components/bin/run.sh run.FormatSimple \
+../../bin/tag_tac.sh: | $TAC_ROOT/components/bin/run.sh run.ExtractAllText \
+../../bin/tag_tac.sh: | $TAC_ROOT/components/bin/run.sh run.FormatSimple \
+../../bin/title_org_extract.sh:$TAC_ROOT/components/bin/run.sh \
+../../bin/umass_wrapper.sh:OFFSETS=$offsets CORPUS=$corpus MAKEFILE=$umass_system/bin/coldstart_single_hop.mk RUNDIR=`pwd` QUERY=$query CONTEXTS=$contexts TAC_ROOT=$umass_system $umass_system/bin/run.sh $umass_system/config/coldstart_single_hop.config response
+
+arguments in java codes
+../../pipeline/src/annotation/SentenceSubset.java
+15:    String numSentsFn = args[0];
+16:    String sentsFn = args[1];
+../../pipeline/src/corpus/CorpusDocument.java
+../../pipeline/src/corpus/CorpusHandler.java
+../../pipeline/src/corpus/CorpusReader.java
+../../pipeline/src/corpus/RawCorpusDocument.java
+../../pipeline/src/corpus/SGMLCorpusReader.java
+../../pipeline/src/corpus/XMLCorpusReader.java
+../../pipeline/src/entity_expansion/DateMatcher.java
+../../pipeline/src/entity_expansion/DateNormalizer.java
+20:    String inFile = args[0];
+21:    String outFile = args[1];
+../../pipeline/src/entity_expansion/MaxLinkEntityExpander.java
+../../pipeline/src/entity_expansion/RedundancyEliminator.java
+23:    String linkStatFn = args[0];
+24:    String inFile = args[1];
+25:    String outFile = args[2];
+../../pipeline/src/entity_expansion/TopN.java
+../../pipeline/src/entity_expansion/TopNLinkEntityExpander.java
+../../pipeline/src/evaluation/AllMatchingQueriesCandidates.java
+35:    QueryList ql = new QueryList(args[0]);
+36:    String tagFn = args[1];
+../../pipeline/src/evaluation/FilterKeyFile.java
+../../pipeline/src/evaluation/MergePerEmployeeMemberKey.java
+28:    BufferedReader br = new BufferedReader(new FileReader(args[0]));
+46:    br = new BufferedReader(new FileReader(args[0]));
+../../pipeline/src/evaluation/NECoverage.java
+27:    String relConfigFn = args[0];
+28:    String tagFn = args[1];
+29:    String keyFn = args[2];
+../../pipeline/src/evaluation/ProbabilityPrecisionCurve.java
+../../pipeline/src/evaluation/RecallErrorAnalysis.java
+23:    String missedContextsFn = args[0];
+24:    String dscoreFn = args[1];
+27:    String queryMatchCandidatesFn = args[2];
+28:    String taggedCandidatesFn = args[3];
+../../pipeline/src/evaluation/ResponseFromDocuments.java
+115:    QueryList ql = new QueryList(args[0]);
+116:    String relConfigFn = args[1];
+117:    String tagFn = args[2];
+118:    String dscoreFn = args[3];
+../../pipeline/src/evaluation/SentenceDistances.java
+80:    QueryList ql = new QueryList(args[0]);
+81:    String drankFn = args[1];
+82:    String keyFn = args[2];
+../../pipeline/src/evaluation/SentenceErrorExamples.java
+20:    String keyFn = args[0];
+21:    String predictFn = args[1];
+22:    String candidatesFn = args[2];
+../../pipeline/src/evaluation/SentenceErrorExamples2013.java
+20:    String keyFn = args[0];
+21:    String predictFn = args[1];
+22:    String candidatesFn = args[2];
+../../pipeline/src/evaluation/SimpleEval.java
+28:    String responseFn = args[0];
+29:    String keyFn = args[1];
+30:    boolean anyDoc = args[2].equals("true");
+../../pipeline/src/evaluation/WeightedPatternPrediction.java
+../../pipeline/src/evaluation/WeightedPatternTrecResponse.java
+../../pipeline/src/features/BreakLevel.java
+../../pipeline/src/features/DocumentTagger.java
+../../pipeline/src/features/OpenNlpTagger.java
+../../pipeline/src/features/SentenceFeatureExtractor.java
+../../pipeline/src/freebase/FreebaseQuery.java
+../../pipeline/src/freebase/FreebaseSlots.java
+37:    String fbIndexDir = args[0];
+38:    String relationMapping = args[1];
+39:    String queryFn = args[2];
+40:    String slotsOutFn = args[3];
+../../pipeline/src/freebase/IndexFreebase.java
+29:    String freebaseFN = args[0];
+30:    String outputDir = args[1];
+../../pipeline/src/indexir/IdFileMapping.java
+22:    String indexDir = args[0];
+23:    String mappingFn = args[1];
+../../pipeline/src/indexir/Indexing.java
+41:    String inputDirOrFileList = args[0];
+42:    String corpusName = args[1];
+43:    boolean addFiles = args[2].equals("true");
+44:    String indexDir = args[3];
+48:      System.out.println("Using document id list: " + args[4]);
+50:      BufferedReader br = new BufferedReader(new FileReader(args[4]));
+../../pipeline/src/indexir/IndexingStoreTagged.java
+44:    String inputDirOrFileList = args[0];
+45:    String corpusName = args[1];
+46:    boolean addFiles = args[2].equals("true");
+47:    String indexDir = args[3];
+51:      System.out.println("Using document id list: " + args[4]);
+53:      BufferedReader br = new BufferedReader(new FileReader(args[4]));
+../../pipeline/src/indexir/IndexingTagged.java
+43:    String inputDirOrFileList = args[0];
+44:    String corpusName = args[1];
+45:    boolean addFiles = args[2].equals("true");
+46:    String indexDir = args[3];
+50:      System.out.println("Using document id list: " + args[4]);
+52:      BufferedReader br = new BufferedReader(new FileReader(args[4]));
+../../pipeline/src/jesa/datatypes/ArpaLM.java
+../../pipeline/src/jesa/datatypes/DocTfIdfVector.java
+../../pipeline/src/jesa/datatypes/DoublePair.java
+../../pipeline/src/jesa/datatypes/Pair.java
+../../pipeline/src/jesa/datatypes/SparseDoubleVector.java
+../../pipeline/src/jesa/datatypes/StringPair.java
+../../pipeline/src/jesa/datatypes/TermDocTransposer.java
+../../pipeline/src/jesa/datatypes/WordCounts.java
+../../pipeline/src/matcher/CandidateMatcher.java
+../../pipeline/src/matcher/CityNeMatcher.java
+../../pipeline/src/matcher/ContextPatternMatcher.java
+../../pipeline/src/matcher/CountryNeMatcher.java
+../../pipeline/src/matcher/DateMatcher.java
+../../pipeline/src/matcher/DateNeMatcher.java
+../../pipeline/src/matcher/FastContextPatternMatcher.java
+../../pipeline/src/matcher/LongTitleNeMatcher.java
+../../pipeline/src/matcher/Matcher.java
+../../pipeline/src/matcher/NePatternMatcher.java
+../../pipeline/src/matcher/NorpPoliticalNeMatcher.java
+../../pipeline/src/matcher/NumberMatcher.java
+../../pipeline/src/matcher/NumberNeMatcher.java
+../../pipeline/src/matcher/OrMatcher.java
+../../pipeline/src/matcher/OrgCorpNeMatcher.java
+../../pipeline/src/matcher/OrgEduNeMatcher.java
+../../pipeline/src/matcher/OrganizationNeMatcher.java
+../../pipeline/src/matcher/PersonFullNameNeMatcher.java
+../../pipeline/src/matcher/PersonNeMatcher.java
+../../pipeline/src/matcher/ReligionNeMatcher.java
+../../pipeline/src/matcher/ShortenedContextPatternMatcher.java
+../../pipeline/src/matcher/StarContextPatternMatcher.java
+../../pipeline/src/matcher/StateOrProvinceNeMatcher.java
+../../pipeline/src/matcher/TagTokenSeq.java
+../../pipeline/src/matcher/TextPatternMatcher.java
+../../pipeline/src/matcher/UrlMatcher.java
+../../pipeline/src/parser/DependencyTree.java
+../../pipeline/src/parser/SentenceDependencyParser.java
+../../pipeline/src/query/QueryList.java
+../../pipeline/src/rerac/protos/Corpus.java
+../../pipeline/src/rerac/protos/InstanceCollection.java
+../../pipeline/src/rerac/protos/corpus.proto
+../../pipeline/src/rerac/protos/instance_collection.proto
+../../pipeline/src/run/AllCandidatesResponse.java
+31:    QueryList ql = new QueryList(args[0]);
+32:    Double score = Double.parseDouble(args[1]);
+36:      runid = args[2];
+../../pipeline/src/run/AlternateNamesCandidates.java
+40:    QueryList ql = new QueryList(args[0]);
+41:    String tagFn = args[1];
+../../pipeline/src/run/Candidates.java
+218:    QueryList ql = new QueryList(args[0]);
+225:    String relConfigFn = args[1];
+226:    String tagFn = args[2];
+../../pipeline/src/run/CandidatesToPOSTagProto.java
+36:    String candsFN = args[0];
+37:    String taggerFN = args[1];
+38:    String docFN = args[2];
+40:        new BufferedReader(new FileReader(args[3])) : null;
+../../pipeline/src/run/CandidatesToProto.java
+35:    String candsFN = args[0];
+36:    String docFN = args[1];
+38:        new BufferedReader(new FileReader(args[2])) : null;
+../../pipeline/src/run/ConnectTags.java
+94:    String tagFn = args[0];
+95:    int numTokens = Integer.parseInt(args[1]);
+../../pipeline/src/run/ConvertResponse2012To2013.java
+../../pipeline/src/run/ConvertResponse2012To2014.java
+../../pipeline/src/run/ConvertResponse2012To2015.java
+45:    String relconfig = args[0];
+../../pipeline/src/run/DateNormalizer.java
+22:    String inFile = args[0];
+23:    String outFile = args[1];
+../../pipeline/src/run/DependencyPatternResponse.java
+44:    QueryList ql = new QueryList(args[0]);
+45:    String sentenceFn = args[1];
+46:    String patternsFn = args[2];
+47:    String teamId = args[3];
+../../pipeline/src/run/Expand.java
+31:    String qXmlFn = args[0];
+32:    String relsFn = args[1];
+33:    String relsCfgFn = args[2];
+34:    String expansionStatFn = args[3];
+35:    int maxN = Integer.parseInt(args[4]);
+36:    String orgSuffixFn = args[5];
+37:    String outFn = args[6];
+40:    boolean doExpansion = args.length < 7 || !"none".equals(args[7]);
+43:    boolean requireLinkBack = args.length > 7 ? Boolean.parseBoolean(args[7]) 
+46:    boolean onlyWiki = "wiki".equals(args[7]);
+47:    boolean onlyRules = "rules".equals(args[7]);
+48:    boolean onlySuffix = "suffix".equals(args[7]);
+49:    boolean onlyLastname = "lastname".equals(args[7]);
+../../pipeline/src/run/ExtractAllText.java
+28:      String filename = args[0];
+../../pipeline/src/run/ExtractText.java
+19:    String filename = args[0];
+20:    String docid = args[1];
+../../pipeline/src/run/ExtractText2.java
+30:    DscoreFile dscoreFile = new DscoreFile(args[0]);    
+../../pipeline/src/run/Features.java
+563:    File featureMapFile = new File(args[0]);
+564:    String classesFn = args[1];
+565:    boolean singleSentenceMode = args[2].equals("true");
+566:    boolean updateFeatureMap = args[3].equals("true");
+567:    String sentenceFn = args[4];
+568:    String featuresFn = args[5];
+571:      for (String type : args[6].split(",")) {
+../../pipeline/src/run/FilterPredictionsByThreshold.java
+11:  String predictionsFn = args[0];
+12:  String paramsFn = args[1];
+../../pipeline/src/run/Format.java
+71:    QueryList ql = new QueryList(args[0]);
+75:        extractionWin = Integer.parseInt(args[1]);
+../../pipeline/src/run/FormatSimple.java
+../../pipeline/src/run/ListMatchResponse.java
+29:    QueryList ql = new QueryList(args[0]);
+30:    String slotFn = args[1];
+31:    MaxLinkEntityExpander mle = new MaxLinkEntityExpander(args[2]);
+32:    String candFn = args[3];
+../../pipeline/src/run/MatchRealOffsets.java
+287:        args[i * 2] = cands.get(i).getTarget();
+288:        args[i * 2 + 1] = cands.get(i).getFiller();
+289:      	logger.debug("Will search for query=" + args[i * 2] + " and slot=" + args[i * 2 + 1]);
+325:            logger.info("No match for query " + args[i * 2] + " in sentence " + 
+330:            logger.warn("No match for query " + args[i * 2] + " in sentence " + 
+340:          logger.warn("No match for filler " + args[i * 2 + 1] + " in sentence " + 
+381:    MatchRealOffsets mro = new MatchRealOffsets(args[0]);
+../../pipeline/src/run/MergeResponses.java
+36:  QueryList ql = new QueryList(args[0]);
+40:  String teamId = args[1];
+43:    responseFns.add(args[i]);
+../../pipeline/src/run/OrganizationsFromTitles.java
+50:  QueryList ql = new QueryList(args[0]);
+51:  String candsFN = args[1];
+52:  String responseFn = args[2]; // Response must not be postprocessed.
+53:  String titleOrgFn = args[3];
+../../pipeline/src/run/PatternPrediction.java
+23:    String sentenceFn = args[0];
+24:    String patternsFn = args[1];
+../../pipeline/src/run/PatternResponse.java
+47:    QueryList ql = new QueryList(args[0]);
+48:    String sentenceFn = args[1];
+49:    String patternsFn = args[2];
+50:    String teamId = args[3];
+51:    boolean fast = (args.length > 4 && (args[4].equals("true") || args[4].equals("shortened"))) ? true : false;
+52:    boolean shortened = fast && args[4].equals("shortened");
+../../pipeline/src/run/PredictionToResponse.java
+42:  QueryList ql = new QueryList(args[0]);
+43:  String predFn = args[1];
+44:  String teamId = args[2];
+../../pipeline/src/run/ProtoToCandidates.java
+28:    String docFN = args[0];
+29:    String candsFN = args[1];
+../../pipeline/src/run/RedundancyEliminator.java
+49:    String linkStatFn = args[0];
+50:    String inFile = args[1];
+51:    QueryList ql = new QueryList(args[2]);
+55:      String mappingFn = args[3];
+../../pipeline/src/run/RemoveSlots.java
+19:    QueryList ql = new QueryList(args[0]);
+20:    String disallowedSlotsFn = args[1];
+../../pipeline/src/run/Retrieve.java
+71:    String queryXmlFn = args[0];
+72:    String indexDir   = args[1];
+73:    int numResults = Integer.parseInt(args[2]);
+74:    String responseFn = args[3];
+75:    boolean strict = args.length >= 5 && args[4].equals("true");
+../../pipeline/src/run/SpecialEntities.java
+../../pipeline/src/run/SupportDocs.java
+35:    String queryFN = args[0];
+36:    String indexDir = args[1];
+37:    String kbDir = args[2];
+38:    String responseFn = args[3];
+../../pipeline/src/run/TaggedDocs.java
+21:    DscoreFile dscoreFile = new DscoreFile(args[0]);    
+../../pipeline/src/run/TaggedStoredDocs.java
+32:    DscoreFile dscoreFile = new DscoreFile(args[0]);
+33:    String indexDir   = args[1];
+../../pipeline/src/run/TaggingCorrector.java
+../../pipeline/src/run/TitleOrgExtractor.java
+66:	  String patternFn = args[0];
+../../pipeline/src/run/WeightedPatternResponse.java
+26:    QueryList ql = new QueryList(args[0]);
+27:    String candidatesFn = args[1];
+28:    String patFn = args[2];
+31:      minScore = Double.parseDouble(args[3]);
+35:      shortened = args[4] == "true";
+39:      runid = args[5];
+../../pipeline/src/tac/SFRecallAnalyse.java
+363:    String responseFile = args[0];
+364:    String keyFile = args[1];
+366:      String flag = args[i];
+../../pipeline/src/tac/SFScore.java
+351:    String responseFile = args[0];
+352:    String keyFile = args[1];
+354:      String flag = args[i];
+../../pipeline/src/tac/ShowTextForOffsets.java
+38:    String task = args[0].toLowerCase();
+42:    String corpusPath = args[1];
+43:    Map<String, DocOffset> docOffsets = readDocOffsets(args[2]);
+44:    String submissionFile = args[3];
+../../pipeline/src/training/DistsupCandidates.java
+178:    QueryList ql = new QueryList(args[0]);
+180:    String textFn = args[1];
+181:    String dscoreFn = args[2];
+182:    boolean matchAll = args[3].equals("true");
+../../pipeline/src/training/FilterContradictingFeatureVectors.java
+21:    String inputFn = args[0];
+22:    String filteredFn = args[1];
+../../pipeline/src/training/FilterWeightedPatterns.java
+11:  String patternFn = args[0];
+12:  String paramsFn = args[1];
+../../pipeline/src/training/LabeledKeySentences.java
+37:    String keyFn = args[0];
+38:    String candidatesFn = args[1];
+39:    String positiveOutFn = args[2];
+42:      goodLabel = args[3];
+../../pipeline/src/training/PairsToNegativeQuery.java
+23:    String pairsFn = args[0];
+24:    String queryFn = args[1];
+../../pipeline/src/training/PatternLabels.java
+33:    String sentenceFn = args[0];
+34:    String patternsFn = args[1];
+../../pipeline/src/training/PatternMetric.java
+../../pipeline/src/training/PrecisionPatternMetric.java
+157:    String trainFn = args[0];
+158:    int minFreq = Integer.parseInt(args[1]);
+159:    double minScore = Double.parseDouble(args[2]);
+160:    boolean printScore = Boolean.parseBoolean(args[3]);
+../../pipeline/src/training/TitleOrgContexts.java
+128:    String tagFn = args[0];
+../../pipeline/src/util/Candidate.java
+../../pipeline/src/util/DTagged.java
+../../pipeline/src/util/DocumentExtractor.java
+../../pipeline/src/util/DscoreFile.java
+../../pipeline/src/util/OffsetPair.java
+../../pipeline/src/util/Pair.java
+../../pipeline/src/util/Responses.java
+../../pipeline/src/util/TextIdentifier.java

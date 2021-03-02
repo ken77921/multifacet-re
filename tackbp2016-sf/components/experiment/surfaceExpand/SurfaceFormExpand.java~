@@ -1,0 +1,125 @@
+import java.util.HashSet;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.List;
+import java.util.ArrayList;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.FileReader;
+import java.io.IOException;
+
+import entity_expansion.TopNLinkEntityExpander;
+
+public class SurfaceFormExpand {
+    public static String ANCHOR_TEXT_FN = "/iesl/canvas/proj/tackbp/2016-pilot/en-es-wiki.linktext.counts";
+    public static String REDIRECT_FN_ENG = "docs/enwiki-20160305-redirect.tsv";
+    public static String REDIRECT_FN_SPA = "docs/eswiki-20160305-redirect.tsv";
+    public static String SUFFIX_FN = "docs/org_suffixes";
+
+    public List<String> expansions = new ArrayList<String>();
+    public String queryName;
+    public String queryType;
+
+    public SurfaceFormExpand(String queryName, String queryType){
+	this.queryName = queryName;
+	this.queryType = queryType;
+    }
+
+
+    public static void main(String[] args) throws IOException{
+	String queryName = args[0];
+	String queryType = args[1];
+	SurfaceFormExpand expand = new SurfaceFormExpand(queryName, queryType);
+	expand.getAnchorTextExpansion(ANCHOR_TEXT_FN, 10);
+	expand.getRedirectExpansion(REDIRECT_FN_ENG);
+	expand.getRedirectExpansion( REDIRECT_FN_SPA);
+	expand.getRuleExpansion(SUFFIX_FN);
+
+	BufferedWriter bw = new BufferedWriter(new FileWriter("Expansion.txt"));
+	bw.append("<name>" + expand.queryName + "</name>\n");
+  
+	for(String expansion: expand.expansions){
+	    bw.append("<alias>" + expansion + "</alias>\n");
+	}
+	
+	bw.close();
+    }
+
+    public void getRuleExpansion(String suffixFn) throws IOException{
+	if(queryType.toLowerCase().equals("per")){
+	    String[] parts = queryName.split(" ");
+	    String lastName = parts[parts.length - 1];
+	    expansions.add(lastName);
+
+	    String firstInitial = Character.toUpperCase(parts[0].charAt(0)) + "." + " " + lastName;
+	    String lastInitial = parts[0] + " " + Character.toUpperCase(lastName.charAt(0)) + ".";
+	    expansions.add(firstInitial);
+	    expansions.add(lastInitial);
+	}
+
+	else if(this.queryType.toLowerCase().equals("org")){
+	    BufferedReader br = new BufferedReader(new FileReader(suffixFn));
+	    for(String line; (line = br.readLine()) != null;){
+		String expansion = queryName + line;
+		if (!expansion.toLowerCase().equals(queryName) && !expansion.isEmpty() && Character.isUpperCase(expansion.charAt(0))){                                                		    expansions.add(expansion);
+		}
+	    }
+	    
+	    br.close();
+	}	    
+   }
+
+    public void getAnchorTextExpansion(String AnchorTextFn, int maxN) throws IOException{
+	TopNLinkEntityExpander expander = new TopNLinkEntityExpander(AnchorTextFn, maxN, true);
+	List<String> aliases = new ArrayList<String>();
+        for (String expansion : expander.expand(queryName)) {
+	    if (!expansion.toLowerCase().equals(queryName.toLowerCase()) && !expansion.isEmpty() &&
+		Character.isUpperCase(expansion.charAt(0))) { // TODO: this is quadratic.
+		aliases.add(expansion);
+	    }
+	}
+
+	this.expansions.addAll(aliases);
+    }
+
+    public void getRedirectExpansion(String RedirectFn) throws IOException{
+	Map<String, String> redirect = new HashMap<String, String>();
+	BufferedReader br = new BufferedReader(new FileReader(RedirectFn));
+	String line;
+	while((line = br.readLine()) != null){
+	    String split[] = line.split("\t");
+	    String firstSplit = split[0].split("E_SLUG_")[1].split("_langE[SN]")[0].replace('_', ' ');
+	    String secondSplit = split[1].split("E_SLUG_")[1].split("_langE[SN]")[0].replace('_', ' ');
+	    redirect.put(firstSplit, secondSplit);
+	}
+	br.close();
+
+	Map<String, HashSet<String>> titleToRedirect = new HashMap<String, HashSet<String>>();
+	for (Map.Entry<String, String> entry : redirect.entrySet()){
+	    if(titleToRedirect.containsKey(entry.getValue())){
+		titleToRedirect.get(entry.getValue()).add(entry.getKey());
+	    }
+	    else {
+		titleToRedirect.put(entry.getValue(), new HashSet());
+		titleToRedirect.get(entry.getValue()).add(entry.getKey());
+	    }
+	}
+
+
+	List<String> aliases = new ArrayList<String>();
+
+        if(redirect.containsKey(queryName)){
+	    HashSet<String> expansions = titleToRedirect.get(redirect.get(queryName));
+	    for(String expansion : expansions){
+		if(!expansion.toLowerCase().equals(queryName.toLowerCase()) && Character.isUpperCase(expansion.charAt(0))){
+		    aliases.add(expansion);
+		}
+	    }
+	}
+
+	expansions.addAll(aliases);
+    }
+   
+}

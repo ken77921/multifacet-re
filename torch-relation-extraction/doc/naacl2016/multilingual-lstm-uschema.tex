@@ -1,0 +1,99 @@
+\documentclass{article} % For LaTeX2e
+\usepackage{naaclhlt2016}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{amsmath,amsthm,amsfonts}
+\usepackage{multirow}
+\usepackage{xspace}
+\usepackage{tikz}
+% \usepackage{natbib}
+\usetikzlibrary{shapes,backgrounds,patterns}
+\usepackage{graphicx}
+%\graphicspath{ {images/} }
+\usepackage{subcaption}
+
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\todo}[1]{{\bf [[}\textcolor{blue}{ todo: #1}{\bf ]]}}
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+% named as such because `\arg1' apparently isn't valid
+\newcommand{\argOne}{\emph{arg1}\xspace}
+\newcommand{\argTwo}{\emph{arg2}\xspace}
+
+\newcommand{\citep}[1]{\cite{#1}}
+\newcommand{\citet}[1]{\newcite{#1}}
+
+
+
+% \title{Broad Coverage Knowledge Base Construction using Cross-Lingual Transfer}
+%\title{No KB? No Problem! Transfer Learning for Multilingual Relation Extraction}
+\title{Multilingual Relation Extraction using Compositional Universal Schema}
+%\title{Transfer Learning for Multilingual \\Knowledge Base Construction}
+% \title{Broad Coverage Knowledge Base Construction using Multilingual Embeddings}
+
+\author{Patrick Verga, David Belanger, Emma Strubell, Benjamin Roth \& Andrew McCallum \\
+College of Information and Computer Sciences\\
+University of Massachusetts Amherst\\
+% Amherst, MA 01002, USA \\
+\texttt{\{pat, belanger, strubell, beroth, mccallum\}@cs.umass.edu} \\
+}
+
+\begin{document}
+
+
+\maketitle
+
+\begin{abstract}
+%When building a knowledge base (KB) of entities and relations from multiple structured KBs and text, \emph{universal schema} represents the union of all input schema, by jointly embedding all relation types from input KBs as well as textual patterns expressing relations.
+\emph{Universal schema} builds a knowledge base (KB) of entities and relations  by jointly embedding all relation types from input KBs as well as textual patterns expressing relations from raw text.
+In most previous applications of universal schema, each textual pattern is represented as a single embedding, preventing generalization to unseen patterns. 
+Recent work employs a neural network to capture patterns' compositional semantics, providing generalization to all possible input text.
+In response, this paper introduces significant further improvements to the coverage and flexibility of universal schema relation extraction: predictions for entities unseen in training and multilingual transfer learning to domains with no annotation.
+We evaluate our model through extensive experiments on the English and Spanish TAC KBP benchmark, outperforming the top system from TAC 2013 slot-filling using no handwritten patterns or additional annotation. 
+We also consider a multilingual setting in which English training data entities overlap with the seed KB, but Spanish text does not. 
+Despite having no annotation for Spanish data, we train an accurate predictor, with additional improvements obtained by tying word embeddings across languages. 
+Furthermore, we find that multilingual training improves English relation extraction accuracy. 
+Our approach is thus suited to broad-coverage automated knowledge base construction in a variety of languages and domains.
+\end{abstract}
+
+
+
+% intro + background
+\input{intro}
+
+%% uschema rel extraction stuff
+%\input{uschema}
+%
+%% multilingual joint embedding
+%\input {multilingual}
+
+\input{methods}
+
+% experiemnts
+\input {experiments}
+
+% resultsslight conclusion
+\input {results}
+
+
+\section{Conclusion}
+
+By jointly embedding English and Spanish corpora along with a KB, we can train an accurate Spanish relation extraction model using no direct annotation for relations in the Spanish data. This approach has the added benefit of providing significant accuracy improvements for the English model, outperforming the top system on the 2013 TAC KBC slot filling task, without using the hand-coded rules or additional annotations of alternative systems. By using deep sentence encoders, we can perform prediction for arbitrary input text and for entities unseen in training. Sentence encoders also provides opportunities to improve cross-lingual transfer learning by sharing word embeddings across languages. In future work we will apply this model to many more languages and domains besides newswire text. We would also like to avoid the entity detection problem by using a deep architecture to both identify entity mentions and identify relations between them.
+
+\subsubsection*{Acknowledgments}
+Many thanks to Arvind Neelakantan for good ideas and discussions. We also appreciate a generous hardware grant from nVidia. This work was supported in part by the Center for Intelligent Information Retrieval, in part by Defense Advanced Research Projects Agency (DARPA) under agreement \#FA8750-13-2-0020 and contract \#HR0011-15-2-0036, and in part by the National Science Foundation (NSF) grant numbers DMR-1534431, IIS-1514053 and CNS-0958392. The U.S. Government is authorized to reproduce and distribute reprints for Governmental purposes notwithstanding any copyright notation thereon, in part by DARPA via agreement \#DFA8750-13-2-0020 and NSF grant \#CNS-0958392. Any opinions, findings and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect those of the sponsor.
+
+\bibliography{sources}
+\bibliographystyle{naaclhlt2016}
+
+\newpage
+%\appendix
+\input{appendix}
+
+
+
+
+\end{document}

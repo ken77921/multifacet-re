@@ -1,0 +1,7 @@
+CANDIDATES="/iesl/canvas/nmonath/tac/2016/tackbp2016-sf/runs/coldstart2016_pilot_eng_UMass_IESL1/hop1_candidates"
+QUERY_EXPANDED="/iesl/canvas/nmonath/tac/2016/tackbp2016-sf/runs/coldstart2016_pilot_eng_UMass_IESL1/hop1_query_expanded.xml"
+
+#Ajay: We do not have the key file so this is not necessary
+#KEY=${TH_RELEX_ROOT}/data/keys/key_2013
+#SCORE_SCRIPT=${TH_RELEX_ROOT}/bin/tac-evaluation/eval-scripts/score2013.sh
+PP=pp15

@@ -1,0 +1,285 @@
+N	v	$ARG1 had $ARG2	$ARG1 hit $ARG2	395	1691	395	365.6
+N	v	$ARG1 has $ARG2	$ARG1 hit $ARG2	395	1646	395	365.6
+N	v	$ARG1 made $ARG2	$ARG1 hit $ARG2	395	718	395	365.6
+N	v	$ARG1 scored $ARG2	$ARG1 hit $ARG2	395	671	395	365.6
+N	v	$ARG1 got $ARG2	$ARG1 hit $ARG2	248	248	395	365.6
+N	v	$ARG1 plays $ARG2	$ARG1 hit $ARG2	204	204	395	365.6
+>	n	$ARG1 president $ARG2	$ARG1 head $ARG2	290	1241	290	290.0
+>	n	$ARG1 chairman $ARG2	$ARG1 head $ARG2	290	1028	290	290.0
+N	v	$ARG1 made $ARG2	$ARG1 head $ARG2	290	718	290	290.0
+>	n	$ARG1 CEO $ARG2	$ARG1 head $ARG2	290	628	290	290.0
+N	v	$ARG1 took $ARG2	$ARG1 head $ARG2	290	624	290	290.0
+>	n	$ARG1 President $ARG2	$ARG1 head $ARG2	290	598	290	290.0
+N	n	$ARG1 as $ARG2	$ARG1 a $ARG2	832	2995	832	279.6666666666667
+N	v	$ARG1 said $ARG2	$ARG1 have $ARG2	278	12640	278	278.0
+N	v	$ARG1 says $ARG2	$ARG1 have $ARG2	278	1806	278	278.0
+:	n	$ARG1 had $ARG2	$ARG1 have $ARG2	278	1691	278	278.0
+:	n	$ARG1 has $ARG2	$ARG1 have $ARG2	278	1646	278	278.0
+N	v	$ARG1 left $ARG2	$ARG1 have $ARG2	278	1156	278	278.0
+N	v	$ARG1 gave $ARG2	$ARG1 have $ARG2	278	816	278	278.0
+:	n	$ARG1 , as $ARG2	$ARG1 , a $ARG2	471	471	7707	238.0
+:	n	$ARG1 writers $ARG2	$ARG1 writer $ARG2	293	293	294	173.0
+:	v	$ARG1 says $ARG2	$ARG1 say $ARG2	150	1806	150	150.0
+N	n	$ARG1 vs $ARG2	$ARG1 v $ARG2	132	132	277	132.0
+>	n	$ARG1 , chairman of the $ARG2	$ARG1 , head of the $ARG2	256	256	390	127.6
+>	n	$ARG1 , president of the $ARG2	$ARG1 , head of the $ARG2	196	196	390	127.6
+>	n	$ARG1 , director of the $ARG2	$ARG1 , head of the $ARG2	104	104	390	127.6
+>	n	$ARG1 , President of the $ARG2	$ARG1 , head of the $ARG2	49	49	390	127.6
+>	n	$ARG1 , chair of the $ARG2	$ARG1 , head of the $ARG2	33	33	390	127.6
+N	n	$ARG1 , secretary of the $ARG2	$ARG1 , head of the $ARG2	24	24	390	127.6
+N	v	$ARG1 had a $ARG2	$ARG1 hit a $ARG2	242	341	242	124.4
+N	v	$ARG1 shot a $ARG2	$ARG1 hit a $ARG2	172	172	242	124.4
+N	v	$ARG1 has a $ARG2	$ARG1 hit a $ARG2	115	115	242	124.4
+N	v	$ARG1 made a $ARG2	$ARG1 hit a $ARG2	61	61	242	124.4
+N	v	$ARG1 snapped a $ARG2	$ARG1 hit a $ARG2	32	32	242	124.4
+N	v	$ARG1 played a $ARG2	$ARG1 hit a $ARG2	23	23	242	124.4
+:	n	$ARG1 founders $ARG2	$ARG1 founder $ARG2	21	21	287	123.0
+>	n	$ARG1 , president of $ARG2	$ARG1 , head of $ARG2	231	233	231	120.2
+>	n	$ARG1 , chairman of $ARG2	$ARG1 , head of $ARG2	143	143	231	120.2
+>	n	$ARG1 , CEO of $ARG2	$ARG1 , head of $ARG2	97	97	231	120.2
+>	n	$ARG1 , director of $ARG2	$ARG1 , head of $ARG2	68	68	231	120.2
+N	n	$ARG1 , father of $ARG2	$ARG1 , head of $ARG2	62	62	231	120.2
+>	n	$ARG1 , President of $ARG2	$ARG1 , head of $ARG2	49	49	231	120.2
+:	n	$ARG1 presidents $ARG2	$ARG1 president $ARG2	7	7	1241	117.0
+N	v	$ARG1 founded $ARG2	$ARG1 found $ARG2	51	51	152	113.2
+N	v	$ARG1 left $ARG2	$ARG1 will $ARG2	397	1156	397	104.4
+N	v	$ARG1 leaves $ARG2	$ARG1 will $ARG2	94	94	397	104.4
+N	v	$ARG1 leaving $ARG2	$ARG1 will $ARG2	24	24	397	104.4
+N	v	$ARG1 remembered $ARG2	$ARG1 will $ARG2	5	5	397	104.4
+N	v	$ARG1 remember $ARG2	$ARG1 will $ARG2	2	2	397	104.4
+N	v	$ARG1 devised $ARG2	$ARG1 will $ARG2	2	2	397	104.4
+N	n	$ARG1 executives $ARG2	$ARG1 executive $ARG2	38	38	119	88.2
+:	n	$ARG1 officials said $ARG2	$ARG1 official said $ARG2	366	366	388	87.2
+>	n	$ARG1 envoy said $ARG2	$ARG1 official said $ARG2	26	26	388	87.2
+>	n	$ARG1 diplomat said $ARG2	$ARG1 official said $ARG2	21	21	388	87.2
+>	n	$ARG1 minister said $ARG2	$ARG1 official said $ARG2	12	12	388	87.2
+>	n	$ARG1 regulators said $ARG2	$ARG1 official said $ARG2	11	11	388	87.2
+>	n	$ARG1 officer said $ARG2	$ARG1 official said $ARG2	10	10	388	87.2
+:	n	$ARG1 members $ARG2	$ARG1 member $ARG2	114	114	131	85.6
+:	n	$ARG1 meetings $ARG2	$ARG1 meeting $ARG2	30	30	163	82.2
+:	v	$ARG1 says the $ARG2	$ARG1 say the $ARG2	82	554	82	82.0
+:	v	$ARG1 reported $ARG2	$ARG1 report $ARG2	138	936	138	79.8
+:	v	$ARG1 reports $ARG2	$ARG1 report $ARG2	69	69	138	79.8
+:	n	$ARG1 rivals $ARG2	$ARG1 rival $ARG2	101	101	146	79.0
+:	n	$ARG1 stars $ARG2	$ARG1 star $ARG2	51	51	300	78.4
+:	v	$ARG1 will visit $ARG2	$ARG1 will travel to $ARG2	185	346	185	75.2
+:	n	$ARG1 meetings in $ARG2	$ARG1 meeting in $ARG2	38	38	221	74.0
+:	n	$ARG1 leaders , $ARG2	$ARG1 leader , $ARG2	55	55	106	71.2
+:	n	$ARG1 champions $ARG2	$ARG1 champion $ARG2	99	99	239	69.4
+>	n	$ARG1 , the president of $ARG2	$ARG1 , the head of $ARG2	147	147	200	67.8
+>	n	$ARG1 , the chairman of $ARG2	$ARG1 , the head of $ARG2	79	79	200	67.8
+N	n	$ARG1 , the father of $ARG2	$ARG1 , the head of $ARG2	47	47	200	67.8
+>	n	$ARG1 , the CEO of $ARG2	$ARG1 , the head of $ARG2	40	40	200	67.8
+>	n	$ARG1 , the director of $ARG2	$ARG1 , the head of $ARG2	26	26	200	67.8
+>	n	$ARG1 , the President of $ARG2	$ARG1 , the head of $ARG2	16	16	200	67.8
+N	n	$ARG1 headquarters in $ARG2	$ARG1 group in $ARG2	67	350	67	67.0
+N	n	$ARG1 meeting in $ARG2	$ARG1 group in $ARG2	67	221	67	67.0
+N	n	$ARG1 summit in $ARG2	$ARG1 group in $ARG2	67	181	67	67.0
+N	n	$ARG1 leaders in $ARG2	$ARG1 group in $ARG2	67	139	67	67.0
+N	n	$ARG1 forces in $ARG2	$ARG1 group in $ARG2	67	117	67	67.0
+N	n	$ARG1 mission in $ARG2	$ARG1 group in $ARG2	67	115	67	67.0
+N	v	$ARG1 to be $ARG2	$ARG1 to give $ARG2	95	122	95	66.0
+N	v	$ARG1 to help $ARG2	$ARG1 to give $ARG2	74	74	95	66.0
+N	v	$ARG1 to buy $ARG2	$ARG1 to give $ARG2	63	63	95	66.0
+N	v	$ARG1 to keep $ARG2	$ARG1 to give $ARG2	49	49	95	66.0
+N	v	$ARG1 to meet $ARG2	$ARG1 to give $ARG2	49	49	95	66.0
+N	v	$ARG1 to put $ARG2	$ARG1 to give $ARG2	42	42	95	66.0
+:	n	$ARG1 strikers $ARG2	$ARG1 striker $ARG2	10	10	161	65.33333333333333
+:	n	$ARG1 officials $ARG2	$ARG1 official $ARG2	120	120	184	65.0
+>	n	$ARG1 envoy $ARG2	$ARG1 official $ARG2	77	77	184	65.0
+N	n	$ARG1 starter $ARG2	$ARG1 official $ARG2	66	66	184	65.0
+>	n	$ARG1 ambassador $ARG2	$ARG1 official $ARG2	32	32	184	65.0
+N	n	$ARG1 fed $ARG2	$ARG1 official $ARG2	30	30	184	65.0
+>	n	$ARG1 Ambassador $ARG2	$ARG1 official $ARG2	24	24	184	65.0
+N	n	$ARG1 at $ARG2	$ARG1 group $ARG2	63	2093	63	63.0
+N	n	$ARG1 left $ARG2	$ARG1 group $ARG2	63	1156	63	63.0
+N	n	$ARG1 lost $ARG2	$ARG1 group $ARG2	63	505	63	63.0
+N	n	$ARG1 defeated $ARG2	$ARG1 group $ARG2	63	367	63	63.0
+N	n	$ARG1 visits $ARG2	$ARG1 group $ARG2	63	322	63	63.0
+N	n	$ARG1 head $ARG2	$ARG1 group $ARG2	63	290	63	63.0
+N	v	$ARG1 will meet $ARG2	$ARG1 will have $ARG2	122	212	122	60.4
+N	v	$ARG1 will lead $ARG2	$ARG1 will have $ARG2	73	73	122	60.4
+N	v	$ARG1 will leave $ARG2	$ARG1 will have $ARG2	64	64	122	60.4
+N	v	$ARG1 will use $ARG2	$ARG1 will have $ARG2	23	23	122	60.4
+N	v	$ARG1 will sell $ARG2	$ARG1 will have $ARG2	20	20	122	60.4
+N	v	$ARG1 will welcome $ARG2	$ARG1 will have $ARG2	16	16	122	60.4
+:	n	$ARG1 leaders in $ARG2	$ARG1 leader in $ARG2	68	139	68	58.6
+N	v	$ARG1 winning the $ARG2	$ARG1 win the $ARG2	43	43	71	58.2
+:	n	$ARG1 wins the $ARG2	$ARG1 win the $ARG2	42	42	71	58.2
+>	v	$ARG1 , the chairman of the $ARG2	$ARG1 , the head of the $ARG2	124	124	234	58.0
+>	n	$ARG1 , the president of the $ARG2	$ARG1 , the head of the $ARG2	93	93	234	58.0
+>	n	$ARG1 , the director of the $ARG2	$ARG1 , the head of the $ARG2	41	41	234	58.0
+>	n	$ARG1 , the manager of the $ARG2	$ARG1 , the head of the $ARG2	20	20	234	58.0
+>	n	$ARG1 , the administrator of the $ARG2	$ARG1 , the head of the $ARG2	12	12	234	58.0
+>	n	$ARG1 , the President of the $ARG2	$ARG1 , the head of the $ARG2	10	10	234	58.0
+:	n	$ARG1 officials in $ARG2	$ARG1 official in $ARG2	152	210	152	54.0
+N	n	$ARG1 agents in $ARG2	$ARG1 official in $ARG2	38	38	152	54.0
+>	n	$ARG1 ambassador in $ARG2	$ARG1 official in $ARG2	31	31	152	54.0
+>	n	$ARG1 envoy in $ARG2	$ARG1 official in $ARG2	26	26	152	54.0
+>	n	$ARG1 officer in $ARG2	$ARG1 official in $ARG2	23	23	152	54.0
+>	n	$ARG1 diplomat in $ARG2	$ARG1 official in $ARG2	21	21	152	54.0
+:	v	$ARG1 , who has won $ARG2	$ARG1 , who have won $ARG2	75	87	75	52.0
+:	v	$ARG1 , who had won $ARG2	$ARG1 , who have won $ARG2	29	29	75	52.0
+:	n	$ARG1 offices in $ARG2	$ARG1 office in $ARG2	68	68	112	51.6
+:	v	$ARG1 faces $ARG2	$ARG1 face $ARG2	49	246	49	49.0
+:	v	$ARG1 faced $ARG2	$ARG1 face $ARG2	49	104	49	49.0
+N	n	$ARG1 owners $ARG2	$ARG1 owner $ARG2	23	23	1005	45.4
+>	n	$ARG1 spokesman in $ARG2	$ARG1 representative in $ARG2	64	172	64	45.0
+>	n	$ARG1 spokeswoman in $ARG2	$ARG1 representative in $ARG2	63	63	64	45.0
+N	n	$ARG1 agents in $ARG2	$ARG1 representative in $ARG2	38	38	64	45.0
+>	n	$ARG1 ambassador in $ARG2	$ARG1 representative in $ARG2	31	31	64	45.0
+N	n	$ARG1 operatives in $ARG2	$ARG1 representative in $ARG2	29	29	64	45.0
+>	n	$ARG1 president in $ARG2	$ARG1 representative in $ARG2	27	27	64	45.0
+N	v	$ARG1 meeting in $ARG2	$ARG1 meet in $ARG2	44	221	44	44.0
+:	v	$ARG1 says a $ARG2	$ARG1 say a $ARG2	43	57	43	43.0
+N	n	$ARG1 administration , $ARG2	$ARG1 group , $ARG2	42	129	42	42.0
+N	n	$ARG1 members , $ARG2	$ARG1 group , $ARG2	42	85	42	42.0
+N	n	$ARG1 meeting , $ARG2	$ARG1 group , $ARG2	42	81	42	42.0
+N	n	$ARG1 summit , $ARG2	$ARG1 group , $ARG2	42	58	42	42.0
+N	n	$ARG1 leaders , $ARG2	$ARG1 group , $ARG2	42	55	42	42.0
+N	n	$ARG1 party , $ARG2	$ARG1 group , $ARG2	42	48	42	42.0
+N	v	$ARG1 based in $ARG2	$ARG1 base in $ARG2	77	102	77	41.4
+:	n	$ARG1 bases in $ARG2	$ARG1 base in $ARG2	22	22	77	41.4
+:	n	$ARG1 matches on $ARG2	$ARG1 match on $ARG2	23	23	44	41.2
+:	n	$ARG1 teams $ARG2	$ARG1 team $ARG2	14	14	131	40.4
+:	v	$ARG1 visited $ARG2	$ARG1 visit $ARG2	39	532	39	39.0
+:	n	$ARG1 visits $ARG2	$ARG1 visit $ARG2	39	322	39	39.0
+:	n	$ARG1 hosts $ARG2	$ARG1 host $ARG2	72	99	72	38.5
+:	v	$ARG1 hosted $ARG2	$ARG1 host $ARG2	62	62	72	38.5
+N	v	$ARG1 hosting $ARG2	$ARG1 host $ARG2	18	18	72	38.5
+N	v	$ARG1 , who had $ARG2	$ARG1 , who hit $ARG2	38	192	38	38.0
+N	v	$ARG1 , who has $ARG2	$ARG1 , who hit $ARG2	38	190	38	38.0
+N	v	$ARG1 , who scored $ARG2	$ARG1 , who hit $ARG2	38	116	38	38.0
+N	v	$ARG1 , who made $ARG2	$ARG1 , who hit $ARG2	38	101	38	38.0
+N	v	$ARG1 , who plays $ARG2	$ARG1 , who hit $ARG2	38	46	38	38.0
+N	v	$ARG1 , who shot $ARG2	$ARG1 , who hit $ARG2	38	43	38	38.0
+:	v	$ARG1 has won $ARG2	$ARG1 have won $ARG2	109	187	109	37.6
+:	v	$ARG1 had won $ARG2	$ARG1 have won $ARG2	73	73	109	37.6
+N	v	$ARG1 list won $ARG2	$ARG1 have won $ARG2	3	3	109	37.6
+:	v	$ARG1 having won $ARG2	$ARG1 have won $ARG2	2	2	109	37.6
+N	v	$ARG1 index won $ARG2	$ARG1 have won $ARG2	1	1	109	37.6
+:	n	$ARG1 's trips to $ARG2	$ARG1 's trip to $ARG2	3	3	157	37.6
+N	n	$ARG1 said as $ARG2	$ARG1 said a $ARG2	37	37	129	37.0
+:	v	$ARG1 played in $ARG2	$ARG1 play in $ARG2	37	47	37	37.0
+:	n	$ARG1 leads the $ARG2	$ARG1 lead the $ARG2	37	64	37	37.0
+:	n	$ARG1 leaders and $ARG2	$ARG1 leader and $ARG2	43	44	43	36.8
+:	v	$ARG1 voted $ARG2	$ARG1 vote $ARG2	59	198	59	35.6
+:	n	$ARG1 votes $ARG2	$ARG1 vote $ARG2	30	30	59	35.6
+:	n	$ARG1 forces in $ARG2	$ARG1 force in $ARG2	35	117	35	35.0
+:	n	$ARG1 Democrats $ARG2	$ARG1 Democrat $ARG2	35	42	35	35.0
+N	v	$ARG1 to help $ARG2	$ARG1 to provide $ARG2	44	74	44	34.4
+N	v	$ARG1 to keep $ARG2	$ARG1 to provide $ARG2	44	49	44	34.4
+N	v	$ARG1 to meet $ARG2	$ARG1 to provide $ARG2	44	49	44	34.4
+N	v	$ARG1 to fire $ARG2	$ARG1 to provide $ARG2	20	20	44	34.4
+N	v	$ARG1 to appoint $ARG2	$ARG1 to provide $ARG2	20	20	44	34.4
+N	v	$ARG1 to open $ARG2	$ARG1 to provide $ARG2	20	20	44	34.4
+N	v	$ARG1 will meet $ARG2	$ARG1 will give $ARG2	44	212	44	34.2
+N	v	$ARG1 will be $ARG2	$ARG1 will give $ARG2	44	183	44	34.2
+N	v	$ARG1 will ask $ARG2	$ARG1 will give $ARG2	28	28	44	34.2
+>	v	$ARG1 will spend $ARG2	$ARG1 will give $ARG2	28	28	44	34.2
+N	v	$ARG1 will represent $ARG2	$ARG1 will give $ARG2	27	27	44	34.2
+N	v	$ARG1 will help $ARG2	$ARG1 will give $ARG2	25	25	44	34.2
+:	n	$ARG1 titles $ARG2	$ARG1 title $ARG2	13	13	81	34.2
+>	v	$ARG1 will return to $ARG2	$ARG1 will go to $ARG2	35	84	35	34.0
+>	v	$ARG1 will head to $ARG2	$ARG1 will go to $ARG2	35	40	35	34.0
+>	v	$ARG1 will fly to $ARG2	$ARG1 will go to $ARG2	35	37	35	34.0
+>	v	$ARG1 will come to $ARG2	$ARG1 will go to $ARG2	30	30	35	34.0
+N	v	$ARG1 reported on $ARG2	$ARG1 report on $ARG2	99	457	99	33.2
+:	n	$ARG1 reports on $ARG2	$ARG1 report on $ARG2	32	32	99	33.2
+N	v	$ARG1 reporting on $ARG2	$ARG1 report on $ARG2	3	3	99	33.2
+N	v	$ARG1 is $ARG2	$ARG1 take $ARG2	33	3631	33	33.0
+N	v	$ARG1 was $ARG2	$ARG1 take $ARG2	33	2520	33	33.0
+N	v	$ARG1 had $ARG2	$ARG1 take $ARG2	33	1691	33	33.0
+N	v	$ARG1 has $ARG2	$ARG1 take $ARG2	33	1646	33	33.0
+N	v	$ARG1 made $ARG2	$ARG1 take $ARG2	33	718	33	33.0
+:	v	$ARG1 took $ARG2	$ARG1 take $ARG2	33	624	33	33.0
+:	v	$ARG1 meets $ARG2	$ARG1 meet $ARG2	33	224	33	33.0
+:	v	$ARG1 included $ARG2	$ARG1 include $ARG2	33	52	33	33.0
+:	v	$ARG1 includes $ARG2	$ARG1 include $ARG2	33	45	33	33.0
+<	v	$ARG1 visited $ARG2	$ARG1 travel to $ARG2	32	532	32	32.0
+<	v	$ARG1 visits $ARG2	$ARG1 travel to $ARG2	32	322	32	32.0
+:	n	$ARG1 teammates $ARG2	$ARG1 teammate $ARG2	32	32	149	32.0
+:	n	$ARG1 games $ARG2	$ARG1 game $ARG2	28	28	62	31.6
+:	n	$ARG1 meetings on $ARG2	$ARG1 meeting on $ARG2	15	15	111	31.2
+N	v	$ARG1 , who led $ARG2	$ARG1 , who have $ARG2	31	194	31	31.0
+:	v	$ARG1 , who had $ARG2	$ARG1 , who have $ARG2	31	192	31	31.0
+:	v	$ARG1 , who has $ARG2	$ARG1 , who have $ARG2	31	190	31	31.0
+N	v	$ARG1 , who said $ARG2	$ARG1 , who have $ARG2	31	141	31	31.0
+N	v	$ARG1 , who scored $ARG2	$ARG1 , who have $ARG2	31	116	31	31.0
+N	v	$ARG1 , who took $ARG2	$ARG1 , who have $ARG2	31	115	31	31.0
+:	n	$ARG1 clubs $ARG2	$ARG1 club $ARG2	11	11	126	30.4
+:	n	$ARG1 managers $ARG2	$ARG1 manager $ARG2	2	2	123	29.6
+:	v	$ARG1 downed $ARG2	$ARG1 down $ARG2	30	30	56	29.4
+:	n	$ARG1 plants in $ARG2	$ARG1 plant in $ARG2	30	30	79	29.2
+:	v	$ARG1 played the $ARG2	$ARG1 play the $ARG2	29	32	29	29.0
+:	v	$ARG1 had a $ARG2	$ARG1 have a $ARG2	29	341	29	29.0
+N	v	$ARG1 shot a $ARG2	$ARG1 have a $ARG2	29	172	29	29.0
+>	v	$ARG1 took a $ARG2	$ARG1 have a $ARG2	29	169	29	29.0
+N	v	$ARG1 said a $ARG2	$ARG1 have a $ARG2	29	129	29	29.0
+:	v	$ARG1 has a $ARG2	$ARG1 have a $ARG2	29	115	29	29.0
+N	v	$ARG1 posted a $ARG2	$ARG1 have a $ARG2	29	66	29	29.0
+:	v	$ARG1 believes $ARG2	$ARG1 believe $ARG2	29	339	29	29.0
+:	v	$ARG1 returned to $ARG2	$ARG1 return to $ARG2	34	333	34	28.6
+:	n	$ARG1 returns to $ARG2	$ARG1 return to $ARG2	34	95	34	28.6
+N	v	$ARG1 returning to $ARG2	$ARG1 return to $ARG2	26	26	34	28.6
+:	n	$ARG1 seats $ARG2	$ARG1 seat $ARG2	17	17	37	28.4
+N	v	$ARG1 will vote on $ARG2	$ARG1 will take on $ARG2	7	7	32	27.2
+>	n	$ARG1 chief executive Lee $ARG2	$ARG1 chief executive officer $ARG2	1	1	79	27.0
+:	n	$ARG1 chief executiver officer $ARG2	$ARG1 chief executive officer $ARG2	1	1	79	27.0
+:	n	$ARG1 operations in $ARG2	$ARG1 operation in $ARG2	28	60	28	26.8
+:	n	$ARG1 's offices in $ARG2	$ARG1 's office in $ARG2	38	38	79	26.8
+:	n	$ARG1 , the parents of $ARG2	$ARG1 , the parent of $ARG2	5	5	54	26.666666666666668
+:	n	$ARG1 lawmakers $ARG2	$ARG1 lawmaker $ARG2	36	36	40	26.2
+N	v	$ARG1 to leave $ARG2	$ARG1 to have $ARG2	26	63	26	26.0
+N	v	$ARG1 to lead $ARG2	$ARG1 to have $ARG2	26	51	26	26.0
+>	v	$ARG1 to keep $ARG2	$ARG1 to have $ARG2	26	49	26	26.0
+N	v	$ARG1 to meet $ARG2	$ARG1 to have $ARG2	26	49	26	26.0
+>	v	$ARG1 to bring $ARG2	$ARG1 to have $ARG2	26	34	26	26.0
+N	v	$ARG1 to sell $ARG2	$ARG1 to have $ARG2	26	31	26	26.0
+N	v	$ARG1 would be $ARG2	$ARG1 would give $ARG2	44	105	44	25.4
+N	v	$ARG1 would meet $ARG2	$ARG1 would give $ARG2	44	44	44	25.4
+N	v	$ARG1 would help $ARG2	$ARG1 would give $ARG2	16	16	44	25.4
+N	v	$ARG1 would keep $ARG2	$ARG1 would give $ARG2	12	12	44	25.4
+N	v	$ARG1 would ask $ARG2	$ARG1 would give $ARG2	11	11	44	25.4
+>	v	$ARG1 would appoint $ARG2	$ARG1 would give $ARG2	11	11	44	25.4
+:	n	$ARG1 directors $ARG2	$ARG1 director $ARG2	2	2	536	24.6
+>	v	$ARG1 will rejoin $ARG2	$ARG1 will join $ARG2	3	3	77	24.2
+:	n	$ARG1 bosses $ARG2	$ARG1 boss $ARG2	5	5	278	24.2
+N	n	$ARG1 said that as $ARG2	$ARG1 said that a $ARG2	24	31	24	24.0
+:	n	$ARG1 reporters $ARG2	$ARG1 reporter $ARG2	84	84	136	24.0
+:	n	$ARG1 officials on $ARG2	$ARG1 official on $ARG2	65	110	65	24.0
+>	n	$ARG1 envoy on $ARG2	$ARG1 official on $ARG2	23	23	65	24.0
+>	n	$ARG1 ministers on $ARG2	$ARG1 official on $ARG2	13	13	65	24.0
+>	n	$ARG1 judge on $ARG2	$ARG1 official on $ARG2	10	10	65	24.0
+>	n	$ARG1 officers on $ARG2	$ARG1 official on $ARG2	9	9	65	24.0
+N	n	$ARG1 agents on $ARG2	$ARG1 official on $ARG2	8	8	65	24.0
+N	v	$ARG1 said $ARG2	$ARG1 give $ARG2	24	12640	24	24.0
+N	v	$ARG1 is $ARG2	$ARG1 give $ARG2	24	3631	24	24.0
+N	v	$ARG1 was $ARG2	$ARG1 give $ARG2	24	2520	24	24.0
+N	v	$ARG1 says $ARG2	$ARG1 give $ARG2	24	1806	24	24.0
+N	v	$ARG1 had $ARG2	$ARG1 give $ARG2	24	1691	24	24.0
+N	v	$ARG1 has $ARG2	$ARG1 give $ARG2	24	1646	24	24.0
+:	n	$ARG1 leaders said $ARG2	$ARG1 leader said $ARG2	22	22	25	23.2
+:	v	$ARG1 wants $ARG2	$ARG1 want $ARG2	23	216	23	23.0
+N	v	$ARG1 to beat the $ARG2	$ARG1 to be the $ARG2	13	13	37	23.0
+N	v	$ARG1 , who left $ARG2	$ARG1 , who will $ARG2	35	101	35	23.0
+N	v	$ARG1 , who leaves $ARG2	$ARG1 , who will $ARG2	11	11	35	23.0
+:	n	$ARG1 officials , $ARG2	$ARG1 official , $ARG2	59	61	59	22.8
+>	n	$ARG1 ambassador , $ARG2	$ARG1 official , $ARG2	21	21	59	22.8
+>	n	$ARG1 envoy , $ARG2	$ARG1 official , $ARG2	16	16	59	22.8
+>	n	$ARG1 officer , $ARG2	$ARG1 official , $ARG2	9	9	59	22.8
+>	n	$ARG1 officers , $ARG2	$ARG1 official , $ARG2	9	9	59	22.8
+N	n	$ARG1 agents , $ARG2	$ARG1 official , $ARG2	9	9	59	22.8
+:	v	$ARG1 had lost $ARG2	$ARG1 have lost $ARG2	47	47	63	22.6
+:	v	$ARG1 has lost $ARG2	$ARG1 have lost $ARG2	36	36	63	22.6
+N	v	$ARG1 index lost $ARG2	$ARG1 have lost $ARG2	28	28	63	22.6
+N	v	$ARG1 stock lost $ARG2	$ARG1 have lost $ARG2	1	1	63	22.6
+:	v	$ARG1 having lost $ARG2	$ARG1 have lost $ARG2	1	1	63	22.6
+:	n	$ARG1 missions in $ARG2	$ARG1 mission in $ARG2	20	20	115	22.2
+N	n	$ARG1 Commission in $ARG2	$ARG1 mission in $ARG2	2	2	115	22.2
+:	v	$ARG1 showed that $ARG2	$ARG1 show that $ARG2	22	47	22	22.0
+>	v	$ARG1 moved to $ARG2	$ARG1 go to $ARG2	22	584	22	22.0
+>	v	$ARG1 returned to $ARG2	$ARG1 go to $ARG2	22	333	22	22.0
+>	v	$ARG1 came to $ARG2	$ARG1 go to $ARG2	22	229	22	22.0
+:	v	$ARG1 went to $ARG2	$ARG1 go to $ARG2	22	202	22	22.0
+:	n	$ARG1 races in $ARG2	$ARG1 race in $ARG2	28	28	50	21.6

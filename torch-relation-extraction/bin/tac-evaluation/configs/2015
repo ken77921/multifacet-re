@@ -1,0 +1,9 @@
+SF_RESULT_DIR="/iesl/canvas/hschang/TAC_2016/codes/tackbp2016-sf/runs/coldstart2015_UMass_IESL1_test_v2.0"
+#CANDIDATES="$SF_RESULT_DIR/hop1_candidates_inv_test2_small"
+CANDIDATES="$SF_RESULT_DIR/hop1_candidates_inv_test2"
+QUERY_EXPANDED="$SF_RESULT_DIR/hop1_query_expanded.xml"
+
+#Ajay: We do not have the key file so this is not necessary
+KEY=${TH_RELEX_ROOT}/data/keys/batch_00_05_poolc.assessed.fqec
+SCORE_SCRIPT=${TH_RELEX_ROOT}/bin/tac-evaluation/eval-scripts/score2015.sh
+PP=pp15
