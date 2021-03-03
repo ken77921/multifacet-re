@@ -99,3 +99,5 @@ The scores are in `entailment_scores.txt` in the current folder.
 
 ## Figure reported in our paper
 The code used to produce the figure reported in our paper can be found in `src/testing/Visualize.ipynb`.
+
+## Our best model checkpoint can be downloaded [here](https://drive.google.com/file/d/1G6pAv-e8AXsvvyr_y9P421IdlHZ037EP/view?usp=sharing).
