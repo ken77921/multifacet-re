@@ -43,7 +43,7 @@ In order to make the code run faster, you can only keep the folder `*_kmeans_avg
 To view the F1 score, run the jupyter notebook `results/Results.ipynb`.
 
 ## Citation
-If you use the codes in `multifacet_relation_extraction` for your paper, please cite Paul et al., 2021.
+If you use the codes in `multifacet_relation_extraction` for your paper, please cite [Paul et al., 2021](http://arxiv.org/abs/2103.15339).
 
 If you use the training data or codes in `torch-relation-extraction`, please cite Verga et al., 2016.
 
